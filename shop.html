@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - ECOBuy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html">ECOBuy</a></div>
+        <nav>
+            <a href="shop.html">Shop</a>
+            <a href="index.html#promise">Our Mission</a>
+            <a href="cart.html" class="cart-icon">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="shop-page">
+        <h2>All Sustainable Herbal Products</h2>
+
+        <div id="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+              <button class="filter-btn" data-filter="soaps">Soaps</button>
+            <button class="filter-btn" data-filter="hair-product">Hair Products</button>
+            <button class="filter-btn" data-filter="lipcare-product">Lipcare Products</button>
+           
+           
+            <button class="filter-btn" data-filter="Diwali Special">Diwali Specials</button>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card" data-id="1" data-name="Hair shampoo 100 ml" data-price="280"
+                data-category="hair-product">
+                <img src="hs.jpg" alt="Hair shampoo 100 ml ">
+                <h3>Hair shampoo 100 ml </h3>
+                <p class="category">Hair Product</p>
+                <p class="price">₹280</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="1" data-name="Alovera Hair serum 100ml" data-price="280"
+                data-category="hair-product">
+                <img src="ahs.jpg" alt="Alovera Hair serum 100ml ">
+                <h3>Alovera Hair serum 100ml</h3>
+                <p class="category">Hair Product</p>
+                <p class="price">₹280</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="1" data-name="Hair dye (Black/Brown) 100gm" data-price="220"
+                data-category="hair-product">
+                <img src="hd.jpg" alt="Hair dye (Black/Brown) 100gm ">
+                <h3>Hair dye (Black/Brown) 100gm</h3>
+                <p class="category">Hair Product</p>
+                <p class="price">₹220</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="1" data-name="Eye brow growth oil 15ml" data-price="170"
+                data-category="hair-product">
+                <img src="ego.jpg" alt="Eye brow growth oil 15ml ">
+                <h3>Eye brow growth oil 15ml</h3>
+                <p class="category">Hair Product</p>
+                <p class="price">₹170</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="1" data-name="Joint pain oil 100ml " data-price="320"
+                data-category="hair-product">
+                <img src="jpo.jpg" alt="Joint pain oil 100ml ">
+                <h3>Joint pain oil 100ml</h3>
+                <p class="category">Hair Product</p>
+                <p class="price">₹320</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card" data-id="2" data-name="Rice potato soap 80gm" data-price="120"
+                data-category="soaps">
+                <img src="rps.jpg" alt="Rice potato soap 80gm">
+                <h3>Rice potato soap 80gm</h3>
+                <p class="category">Soaps</p>
+                <p class="price">₹120</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="2" data-name="Double layer D tan soap 80gm" data-price="150"
+                data-category="soaps">
+                <img src="dldt.jpg" alt="Double layer D tan soap 80gm">
+                <h3>Double layer D tan soap 80gm</h3>
+                <p class="category">Soaps</p>
+                <p class="price">₹150</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="2" data-name="Dark spot soap 80gm" data-price="120" data-category="soaps">
+                <img src="rps.jpg" alt="Dark spot soap 80gm">
+                <h3>Dark spot soap 80gm</h3>
+                <p class="category">Soaps</p>
+                <p class="price">₹120</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+             <div class="product-card" data-id="2" data-name="Baby soap 80gm" data-price="120"
+                data-category="soaps">
+                <img src="bs.jpg" alt="Baby soap 80gm">
+                <h3>Rice potato soap Baby soap 80gm</h3>
+                <p class="category">Soaps</p>
+                <p class="price">₹120</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+
+
+            <div class="product-card" data-id="3" data-name="Lip balm 15 gm " data-price="150"
+                data-category="lipcare-product">
+                <img src="lb.jpg" alt="Lip balm 15 gm ">
+                <h3>Lip balm 15 gm </h3>
+                <p class="category">Lipcare Product</p>
+                <p class="price">₹150</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="3" data-name="De pigmentation lipbalm " data-price="250"
+                data-category="lipcare-product">
+                <img src="lb.jpg" alt="De pigmentation lipbalm ">
+                <h3>De pigmentation lipbalm</h3>
+                <p class="category">Lipcare Product</p>
+                <p class="price">₹250</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="3" data-name="Diwali Combo" data-price="450"
+                data-category="Diwali Special">
+                <img src="d.jpg" alt="Diwali Combo ">
+                <h3>Diwali</h3>
+                <p class="category">Diwali Combo</p>
+                <p class="price">₹450</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+
+            
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ECOBuy. All rights reserved. | Sustainable & Ethical.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Existing Cart Initialization Logic
+            const cartCountSpan = document.getElementById('cart-count');
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const productCards = document.querySelectorAll('.product-card');
+
+            function updateCartCount() {
+                const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                cartCountSpan.textContent = totalItems;
+            }
+
+            // --- NEW FILTERING LOGIC ---
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            function filterProducts(category) {
+                productCards.forEach(card => {
+                    const productCategory = card.dataset.category;
+
+                    if (category === 'all' || productCategory === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Add Event Listeners to Filter Buttons
+            filterButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const selectedFilter = event.target.dataset.filter;
+
+                    // Update active state for styling
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    event.target.classList.add('active');
+
+                    filterProducts(selectedFilter);
+                });
+            });
+
+            // Existing Add to Cart Logic
+            document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const productCard = event.target.closest('.product-card');
+                    const productId = productCard.dataset.id;
+                    const productName = productCard.dataset.name;
+                    const productPrice = parseFloat(productCard.dataset.price);
+
+                    const existingItem = cart.find(item => item.id === productId);
+                    if (existingItem) {
+                        existingItem.quantity++;
+                    } else {
+                        cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+                    }
+
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartCount();
+
+                    const originalText = button.textContent;
+                    button.textContent = '✓ Added!';
+                    button.disabled = true;
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.disabled = false;
+                    }, 1000);
+                });
+            });
+
+            // Initial calls
+            updateCartCount();
+            filterProducts('all');
+        });
+    </script>
+
+</body>
+
+</html>

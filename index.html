@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOBuy - Your Sustainable Herbal Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html">ECOBuy</a></div>
+        <nav>
+            <a href="shop.html">Shop</a>
+            <a href="#promise">Our Mission</a>
+            <a href="cart.html" class="cart-icon">🛒 Cart (<span id="cart-count">0</span>)</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Sustainable Herbal Marketplace</h1>
+                <p>Where nature meets responsibility. Discover the finest herbal products sourced with the planet in mind.</p>
+                <a href="shop.html" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <span class="icon">🌿</span>
+                <h3>Naturally Sourced</h3>
+                <p>Potent herbal products, from essential oils and supplements to teas and skincare.</p>
+            </div>
+            <div class="info-card">
+                <span class="icon">🌍</span>
+                <h3>Sustainable & Ethical</h3>
+                <p>We partner with producers who prioritize eco-friendly practices and minimize their footprint.</p>
+            </div>
+            <div class="info-card">
+                <span class="icon">✨</span>
+                <h3>Quality You Can Trust</h3>
+                <p>Every product is vetted for purity, efficacy, and transparency.</p>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-collections">
+            <h2>Featured Collections</h2>
+            <div class="collection-grid">
+                <div class="collection-card supplements">
+                    <h3>Herbal Supplements</h3>
+                    <p>Boost your wellness with organic vitamins, tinctures, and power greens.</p>
+                    <a href="shop.html" class="collection-link">Shop Supplements →</a>
+                </div>
+                <div class="collection-card skincare">
+                    <h3>Natural Skincare</h3>
+                    <p>Nourish your skin with plant-based creams, serums, and cleansers.</p>
+                    <a href="shop.html" class="collection-link">Shop Skincare →</a>
+                </div>
+                <div class="collection-card aromatherapy">
+                    <h3>Aromatherapy</h3>
+                    <p>Explore pure essential oils, diffusers, and natural home fragrances.</p>
+                    <a href="shop.html" class="collection-link">Shop Aromatherapy →</a>
+                </div>
+                <div class="collection-card home">
+                    <h3>Sustainable Home</h3>
+                    <p>Eco-friendly cleaning supplies and reusable goods to green your living space.</p>
+                    <a href="shop.html" class="collection-link">Shop Home →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="promise" class="sustainability-promise">
+            <h2>Our Sustainability Promise</h2>
+            <div class="promise-points">
+                <ul>
+                    <li>**Biodegradable Packaging:** Minimizing plastic use across our product line.</li>
+                    <li>**Fair Trade Practices:** Ensuring all workers and farmers are treated and compensated fairly.</li>
+                    <li>**Carbon Neutral Shipping:** Offsetting the emissions from your order deliveries.</li>
+                </ul>
+                <a href="#" class="cta-button secondary">Learn More About Our Mission</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ECOBuy. All rights reserved. | Sustainable & Ethical.</p>
+    </footer>
+
+    <script>
+        // Simple script to update the cart count on the homepage
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartCountSpan = document.getElementById('cart-count');
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCountSpan.textContent = totalItems;
+        });
+    </script>
+    
+</body>
+</html>
